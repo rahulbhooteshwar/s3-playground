@@ -1,0 +1,89 @@
+{
+  "version": "0",
+  "id": "79f7da62-0fd4-a6e3-92b2-42379fe29741",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "account": "322616577875",
+  "time": "2021-10-03T15:24:31Z",
+  "region": "ap-south-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "322616577875",
+      "arn": "arn:aws:iam::322616577875:root",
+      "accountId": "322616577875",
+      "accessKeyId": "AKIAUWHLSJ5J5US6NM5Q",
+      "userName": "rb-aws-2020"
+    },
+    "eventTime": "2021-10-03T15:24:31Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "CompleteMultipartUpload",
+    "awsRegion": "ap-south-1",
+    "sourceIPAddress": "103.247.4.90",
+    "userAgent": "[aws-sdk-nodejs/2.999.0 win32/v14.15.1 callback]",
+    "requestParameters": {
+      "bucketName": "rb-cf-s3-demo",
+      "Host": "rb-cf-s3-demo.s3.ap-south-1.amazonaws.com",
+      "uploadId": "Vd51J.kzpJB7a_K8COMJC5JNkpmcpvK97p98sNuupomftSr9.xC4BOoGmZmLgODLqhDyBwe0cBHqj8_HGrPawyBbr95zWD0fu8i68d8z0QI-",
+      "key": "fifa21.mp4",
+      "CompleteMultipartUpload": {
+        "xmlns": "http://s3.amazonaws.com/doc/2006-03-01/",
+        "Part": [
+          {
+            "PartNumber": 1.0,
+            "ETag": "\"888d1afb34c2a6297d52a266aaea7704\""
+          },
+          {
+            "PartNumber": 2.0,
+            "ETag": "\"d32ee88aba32be977cdc73b1896c6781\""
+          },
+          {
+            "PartNumber": 3.0,
+            "ETag": "\"9ea97b3e7b38336489cea896bd59565a\""
+          },
+          {
+            "PartNumber": 4.0,
+            "ETag": "\"ab1b3a7884c4e01c2d4ef030b8dd6754\""
+          },
+          {
+            "PartNumber": 5.0,
+            "ETag": "\"3160cd90fdb4b844cc97e83d477bd923\""
+          },
+          {
+            "PartNumber": 6.0,
+            "ETag": "\"94b613fa2863d8c43a2ac1db54958cd9\""
+          }
+        ]
+      }
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "SignatureVersion": "SigV4",
+      "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "bytesTransferredIn": 615.0,
+      "AuthenticationMethod": "AuthHeader",
+      "x-amz-id-2": "otz0wFidxIGOHfEUQVVwCtkwbw6n8vAzjHcNDX/lkBEvw3iKm9xi9QCCPC+LlJmgjeiJgb+lOFA=",
+      "bytesTransferredOut": 342.0
+    },
+    "requestID": "6TQV2MFA6GRPJEJT",
+    "eventID": "7a8718e2-4d62-4316-bf80-e9b87962ead6",
+    "readOnly": false,
+    "resources": [
+      {
+        "type": "AWS::S3::Object",
+        "ARN": "arn:aws:s3:::rb-cf-s3-demo/fifa21.mp4"
+      },
+      {
+        "accountId": "322616577875",
+        "type": "AWS::S3::Bucket",
+        "ARN": "arn:aws:s3:::rb-cf-s3-demo"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": false,
+    "recipientAccountId": "322616577875",
+    "eventCategory": "Data"
+  }
+}

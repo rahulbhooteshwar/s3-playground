@@ -1,0 +1,59 @@
+{
+  "version": "0",
+  "id": "ff250dd0-bd26-9401-4e3d-38f0e9f39ff5",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "account": "322616577875",
+  "time": "2021-10-03T14:21:40Z",
+  "region": "ap-south-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.08",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "322616577875",
+      "arn": "arn:aws:iam::322616577875:root",
+      "accountId": "322616577875",
+      "accessKeyId": "AKIAUWHLSJ5J5US6NM5Q",
+      "userName": "rb-aws-2020"
+    },
+    "eventTime": "2021-10-03T14:21:40Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "PutObject",
+    "awsRegion": "ap-south-1",
+    "sourceIPAddress": "103.247.4.90",
+    "userAgent": "[aws-sdk-nodejs/2.999.0 win32/v14.15.1 callback]",
+    "requestParameters": {
+      "bucketName": "rb-cf-s3-demo",
+      "Host": "rb-cf-s3-demo.s3.amazonaws.com",
+      "key": "ROG3.jpg"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "SignatureVersion": "SigV4",
+      "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "bytesTransferredIn": 1157008.0,
+      "AuthenticationMethod": "AuthHeader",
+      "x-amz-id-2": "MMbc6aPgbubLp2qSK0MnL5YWLt20iqMVABHkSj8nV0A8yt1sYWmVG5Icjp3Y8GAT7UixKSojk00=",
+      "bytesTransferredOut": 0.0
+    },
+    "requestID": "05GPX8A86NYPJH42",
+    "eventID": "0ae4ee93-8021-4065-bbfa-74177c64ab23",
+    "readOnly": false,
+    "resources": [
+      {
+        "type": "AWS::S3::Object",
+        "ARN": "arn:aws:s3:::rb-cf-s3-demo/ROG3.jpg"
+      },
+      {
+        "accountId": "322616577875",
+        "type": "AWS::S3::Bucket",
+        "ARN": "arn:aws:s3:::rb-cf-s3-demo"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "managementEvent": false,
+    "recipientAccountId": "322616577875",
+    "eventCategory": "Data"
+  }
+}
